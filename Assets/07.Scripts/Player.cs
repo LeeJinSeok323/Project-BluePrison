@@ -113,8 +113,13 @@ public class Player : MonoBehaviour
             anim.SetBool("isRun", false);
         }
         // 버그방지
+<<<<<<< Updated upstream
         if (moveSpeed < 1.0f){
             moveSpeed = 1.0f;
+=======
+        if (moveSpeed == 4.5f){
+            moveSpeed = 3.0f;
+>>>>>>> Stashed changes
         }
     }
 
