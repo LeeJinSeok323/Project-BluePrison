@@ -1,18 +1,14 @@
 {
-    "name": "Unity.Bindings.OpenImageIO.Editor",
-    "rootNamespace": "",
+    "name": "Unity.RenderPipelines.HighDefinition.Config.Runtime",
     "references": [
-        "Unity.Collections"
+        "GUID:df380645f10b7bc4b97d4f5eb6303d95"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": true,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+    "versionDefines": []
 }

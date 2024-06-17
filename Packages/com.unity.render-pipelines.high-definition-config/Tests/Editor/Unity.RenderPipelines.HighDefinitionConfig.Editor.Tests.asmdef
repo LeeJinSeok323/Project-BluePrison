@@ -1,9 +1,8 @@
 {
-    "name": "Unity.OpenImageIO.Editor.Tests",
-    "rootNamespace": "",
+    "name": "Unity.RenderPipelines.HighDefinitionConfig.Editor.Tests",
     "references": [
-        "Unity.Bindings.OpenImageIO.Editor",
-        "Unity.Collections"
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
     ],
     "includePlatforms": [
         "Editor"
@@ -18,6 +17,5 @@
     "defineConstraints": [
         "UNITY_INCLUDE_TESTS"
     ],
-    "versionDefines": [],
-    "noEngineReferences": false
+    "versionDefines": []
 }
