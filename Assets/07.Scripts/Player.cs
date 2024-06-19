@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class Player : MonoBehaviour
 {
-    float v, h;
     public float turnSpeed = 80.0f;
     public float moveSpeed = 1f;
     public float sensitivity = 100f;
@@ -48,19 +46,20 @@ public class Player : MonoBehaviour
         CheckMovement();     
         dir.x = -Input.GetAxis("Vertical");
         dir.z = Input.GetAxis("Horizontal");
+        
     }
     void FixedUpdate() {
         Fall();    
     }
     void OnCollisionEnter(Collision collision)
     {
-        // ¶¥À» ¹âÀ¸¸é Á¡ÇÁ °¡´É (2´ÜÁ¡ÇÁ ¹æÁö)
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
         if (collision.gameObject.CompareTag("Ground"))
         {   
             isGrounded = true;
             anim.SetBool("isJump", false);
             anim.SetBool("isFalling", false);
-            Debug.Log("¶¥¿¡ ´ê¾Æ¼­");
+            Debug.Log("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ¼ï¿½");
         }
     }
 
@@ -83,18 +82,15 @@ public class Player : MonoBehaviour
         }
         else{
             anim.SetBool("isWalk", true);
-
         }
     }
     void Move(){
-        // °¡·Î½ÃÁ¡ÀÌ¶ó º¯È¯ÇÔ
+        // ï¿½ï¿½ï¿½Î½ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ ï¿½ï¿½È¯ï¿½ï¿½
         // v = Input.GetAxis("Horizontal");
         // h = -Input.GetAxis("Vertical");
 
-        if (v > 0.0f)
+        if (dir.z != 0.0f)
             anim.SetFloat("moveDir", 1.0f);
-        else if (v < 0.0f)
-            anim.SetFloat("moveDir", -1.0f);     
         else
             anim.SetFloat("moveDir", 0.0f);
 
@@ -105,27 +101,22 @@ public class Player : MonoBehaviour
     }
     void Run(){
         if(Input.GetButtonDown("Sprint") && !isCrouch){
-            moveSpeed += 1.0f;
+            moveSpeed += 1.5f;
             anim.SetBool("isRun", true);
         }
         else if (Input.GetButtonUp("Sprint") && !isCrouch){
-            moveSpeed -= 1.0f;
+            moveSpeed -= 1.5f;
             anim.SetBool("isRun", false);
         }
-        // ¹ö±×¹æÁö
-<<<<<<< Updated upstream
-        if (moveSpeed < 1.0f){
-            moveSpeed = 1.0f;
-=======
+        // ï¿½ï¿½ï¿½×¹ï¿½ï¿½ï¿½
         if (moveSpeed == 4.5f){
             moveSpeed = 3.0f;
->>>>>>> Stashed changes
         }
     }
 
 
     void Jump(){
-        // Á¡ÇÁ¸¦ ´­·¶À» ¶§ Áö¸é¿¡ ºÙ¾îÀÖ±â, ±â¾î´Ù´Ï´Â ÁßÀÌ ¾Æ´Ò¶§ 
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½é¿¡ ï¿½Ù¾ï¿½ï¿½Ö±ï¿½, ï¿½ï¿½ï¿½Ù´Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Ò¶ï¿½ 
         if (Input.GetButtonDown("Jump") && isGrounded && !isCrouch)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
@@ -141,18 +132,18 @@ public class Player : MonoBehaviour
             1000.0f,
             1 << 6
         );
-        // Raycast°¡ ¸ÂÀº ÁöÁ¡°ú ÇöÀç À§Ä¡ÀÇ °Å¸® °è»ê
+        // Raycastï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Å¸ï¿½ ï¿½ï¿½ï¿½
         float distanceToGround = transform.position.y - hit.point.y;
-        Debug.Log("Áö¸é±îÁöÀÇ °Å¸®: " + Mathf.RoundToInt(distanceToGround));
+        Debug.Log("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½: " + Mathf.RoundToInt(distanceToGround));
         if(transform.position.y - hit.point.y > 10.0f){
-            Debug.Log("Áö¸éÀÌ¶û 10.0f ÀÌ»ó ¶³¾îÁü");
+            Debug.Log("ï¿½ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ 10.0f ï¿½Ì»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
             Debug.Log(hit.transform.name);
             anim.SetBool("isFalling", true);
         }
     }
 
     void Crouch(){ 
-        // Input Manager¿¡¼­ Crawl Key ÁöÁ¤ ¹× º¯°æ °¡´É.
+        // Input Managerï¿½ï¿½ï¿½ï¿½ Crawl Key ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
         if (Input.GetButtonDown("Crouch") && !isCrouch){
             moveSpeed = moveSpeed / 2;
             isCrouch = true;
