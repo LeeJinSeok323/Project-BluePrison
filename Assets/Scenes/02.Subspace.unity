@@ -118,6 +118,33 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &212851109 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9105957404185902273, guid: d4497371ebe8d234fb49e9627f50e748, type: 3}
+  m_PrefabInstance: {fileID: 496139979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &212851113
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212851109}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1986042239478689767, guid: d4497371ebe8d234fb49e9627f50e748, type: 3}
 --- !u!1001 &237721569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -595,7 +622,7 @@ GameObject:
   - component: {fileID: 427757066}
   - component: {fileID: 427757068}
   - component: {fileID: 427757067}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,10 +709,10 @@ GameObject:
   - component: {fileID: 464420265}
   - component: {fileID: 464420264}
   - component: {fileID: 464420263}
-  m_Layer: 10
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -723,8 +750,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.5605398, y: 1, z: 1.4161116}
+  m_Center: {x: -0.28026983, y: 0, z: 0.20805657}
 --- !u!23 &464420264
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -826,14 +853,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7248760203004421216, guid: d4497371ebe8d234fb49e9627f50e748, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d4497371ebe8d234fb49e9627f50e748, type: 3}
       propertyPath: m_Name
       value: BP_Memory
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d4497371ebe8d234fb49e9627f50e748, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105957404185902273, guid: d4497371ebe8d234fb49e9627f50e748, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -7248760203004421216, guid: d4497371ebe8d234fb49e9627f50e748, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1421393669}
+    - targetCorrespondingSourceObject: {fileID: 9105957404185902273, guid: d4497371ebe8d234fb49e9627f50e748, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 212851113}
   m_SourcePrefab: {fileID: 100100000, guid: d4497371ebe8d234fb49e9627f50e748, type: 3}
 --- !u!1 &515470883
 GameObject:
@@ -846,7 +891,7 @@ GameObject:
   - component: {fileID: 515470884}
   - component: {fileID: 515470886}
   - component: {fileID: 515470885}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -932,7 +977,7 @@ GameObject:
   - component: {fileID: 648090604}
   - component: {fileID: 648090606}
   - component: {fileID: 648090605}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (160)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1056,10 +1101,10 @@ GameObject:
   - component: {fileID: 832885435}
   - component: {fileID: 832885434}
   - component: {fileID: 832885433}
-  m_Layer: 10
+  m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1072,7 +1117,7 @@ Transform:
   m_GameObject: {fileID: 832885431}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 11.3118, y: 5.1771, z: 7.7651}
+  m_LocalPosition: {x: 11.13, y: 5.1771, z: 7.7651}
   m_LocalScale: {x: 46.435455, y: 0.023972929, z: 18.76679}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1097,8 +1142,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.3831133, y: 16.787289, z: 1.0688044}
+  m_Center: {x: -0.19155753, y: -7.8935843, z: 0.034401923}
 --- !u!23 &832885434
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1164,10 +1209,10 @@ GameObject:
   - component: {fileID: 886504233}
   - component: {fileID: 886504232}
   - component: {fileID: 886504231}
-  m_Layer: 10
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1180,7 +1225,7 @@ Transform:
   m_GameObject: {fileID: 886504229}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.5168, y: -4.1139, z: 7.7651}
+  m_LocalPosition: {x: 6.5168, y: -5.28, z: 7.7651}
   m_LocalScale: {x: 9.589172, y: 0.111535, z: 46.435455}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1205,8 +1250,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.6235222, y: 1, z: 1.4129697}
+  m_Center: {x: -0.31176117, y: 0, z: 0.20648502}
 --- !u!23 &886504232
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1271,7 +1316,8 @@ GameObject:
   - component: {fileID: 1091449730}
   - component: {fileID: 1091449732}
   - component: {fileID: 1091449731}
-  m_Layer: 0
+  - component: {fileID: 1091449733}
+  m_Layer: 3
   m_Name: Rock_Wall 1_4 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1287,11 +1333,11 @@ Transform:
   m_GameObject: {fileID: 1091449729}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000002473592, y: 1, z: 0.0000015497205, w: 3.4106051e-12}
-  m_LocalPosition: {x: -6.5847244, y: 12.488695, z: 55.524345}
+  m_LocalPosition: {x: 0.0039100647, y: -0.4662056, z: 64.9883}
   m_LocalScale: {x: 1.1366, y: 1.1365999, z: 1.1365999}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1291393647}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1091449731
 MeshRenderer:
@@ -1346,6 +1392,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091449729}
   m_Mesh: {fileID: 6066244242447980545, guid: c4436e5fe0292534da655f46d74f708b, type: 3}
+--- !u!64 &1091449733
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091449729}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6066244242447980545, guid: c4436e5fe0292534da655f46d74f708b, type: 3}
 --- !u!1 &1111902498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,7 +1425,7 @@ GameObject:
   - component: {fileID: 1111902499}
   - component: {fileID: 1111902501}
   - component: {fileID: 1111902500}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1444,10 +1512,10 @@ GameObject:
   - component: {fileID: 1139928105}
   - component: {fileID: 1139928104}
   - component: {fileID: 1139928103}
-  m_Layer: 10
+  m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1460,7 +1528,7 @@ Transform:
   m_GameObject: {fileID: 1139928101}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 6.5168, y: 5.1771, z: 30.9829}
+  m_LocalPosition: {x: 6.5168, y: 5.1771, z: 47.95}
   m_LocalScale: {x: 9.589172, y: 0.116088636, z: 18.766811}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1485,8 +1553,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.6448488, y: 1, z: 1.1043916}
+  m_Center: {x: -0.3008831, y: 1.10522485e-14, z: 0.052195683}
 --- !u!23 &1139928104
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1552,10 +1620,10 @@ GameObject:
   - component: {fileID: 1169027507}
   - component: {fileID: 1169027506}
   - component: {fileID: 1169027505}
-  m_Layer: 10
+  m_Layer: 3
   m_Name: Cube (5)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1568,7 +1636,7 @@ Transform:
   m_GameObject: {fileID: 1169027503}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 1.7218, y: 5.1771, z: 7.7651}
+  m_LocalPosition: {x: -3.1, y: 5.1771, z: 6}
   m_LocalScale: {x: 46.435455, y: 0.023972929, z: 18.76679}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1593,8 +1661,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.4402828, y: 1, z: 1.0839796}
+  m_Center: {x: -0.22014172, y: 0, z: 0.041989632}
 --- !u!23 &1169027506
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1880,6 +1948,44 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!1 &1291393646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1291393647}
+  m_Layer: 3
+  m_Name: Rock Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1291393647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291393646}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.5886345, y: 12.954901, z: -9.463953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1752006625}
+  - {fileID: 7187824396766939857}
+  - {fileID: 9069042647419585123}
+  - {fileID: 1091449730}
+  - {fileID: 6641110896078081419}
+  - {fileID: 8745903910862592294}
+  - {fileID: 8015802707737015913}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1312122902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,7 +1997,7 @@ GameObject:
   - component: {fileID: 1312122903}
   - component: {fileID: 1312122905}
   - component: {fileID: 1312122904}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2015,6 +2121,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1421393665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7248760203004421216, guid: d4497371ebe8d234fb49e9627f50e748, type: 3}
+  m_PrefabInstance: {fileID: 496139979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1421393669
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421393665}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5949010539654933481, guid: d4497371ebe8d234fb49e9627f50e748, type: 3}
 --- !u!1 &1475488305
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,10 +2160,10 @@ GameObject:
   - component: {fileID: 1475488309}
   - component: {fileID: 1475488308}
   - component: {fileID: 1475488307}
-  m_Layer: 10
+  m_Layer: 3
   m_Name: Cube (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2068,8 +2201,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.6160926, y: 1, z: 1.0900054}
+  m_Center: {x: -0.3080465, y: 2.6399672e-14, z: 0.045002274}
 --- !u!23 &1475488308
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2134,7 +2267,7 @@ GameObject:
   - component: {fileID: 1519592539}
   - component: {fileID: 1519592541}
   - component: {fileID: 1519592540}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (146)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2324,7 +2457,8 @@ GameObject:
   - component: {fileID: 1752006625}
   - component: {fileID: 1752006624}
   - component: {fileID: 1752006623}
-  m_Layer: 0
+  - component: {fileID: 1752006626}
+  m_Layer: 3
   m_Name: Rock_Wall 1_4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2393,12 +2527,34 @@ Transform:
   m_GameObject: {fileID: 1752006622}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0000017490938, y: 0.7071067, z: 0.7071068, w: 0.0000017490936}
-  m_LocalPosition: {x: -6.5846386, y: 23.002037, z: 38.464344}
-  m_LocalScale: {x: 1.1366, y: 1.1365997, z: 1.1365997}
+  m_LocalPosition: {x: 0.0039958954, y: 10.047136, z: 47.9283}
+  m_LocalScale: {x: 1.1366, y: 1.1365995, z: 1.1365995}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1291393647}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1752006626
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752006622}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6066244242447980545, guid: c4436e5fe0292534da655f46d74f708b, type: 3}
 --- !u!1 &1898074284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,7 +2809,7 @@ GameObject:
   - component: {fileID: 1969457170}
   - component: {fileID: 1969457169}
   - component: {fileID: 1969457168}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3161,7 +3317,7 @@ GameObject:
   - component: {fileID: 5113153295797328371}
   - component: {fileID: 5516889380264268062}
   - component: {fileID: 680057105955759106}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (88)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3179,7 +3335,8 @@ GameObject:
   - component: {fileID: 9069042647419585123}
   - component: {fileID: 68183062869564019}
   - component: {fileID: 6319824902024581170}
-  m_Layer: 0
+  - component: {fileID: 9069042647419585124}
+  m_Layer: 3
   m_Name: Rock_Wall 1_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3242,7 +3399,7 @@ GameObject:
   - component: {fileID: 8140295357683569541}
   - component: {fileID: 6767877484045551285}
   - component: {fileID: 5337885667440054476}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3473,7 +3630,7 @@ GameObject:
   - component: {fileID: 810896353310560760}
   - component: {fileID: 9201820816397547745}
   - component: {fileID: 5246691113294639039}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (145)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3536,7 +3693,7 @@ GameObject:
   - component: {fileID: 8775741802967149572}
   - component: {fileID: 6588536149230309540}
   - component: {fileID: 6088384123730669974}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3562,7 +3719,7 @@ GameObject:
   - component: {fileID: 2162986238935546298}
   - component: {fileID: 5081467727023177487}
   - component: {fileID: 1696160845652949348}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (159)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3710,7 +3867,7 @@ GameObject:
   - component: {fileID: 8075240633915735084}
   - component: {fileID: 448015250876857668}
   - component: {fileID: 9120571390935077938}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3751,7 +3908,7 @@ GameObject:
   - component: {fileID: 2328711193286048229}
   - component: {fileID: 6470126879861468170}
   - component: {fileID: 6986633707309839350}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3769,7 +3926,7 @@ GameObject:
   - component: {fileID: 7768340233781752061}
   - component: {fileID: 6582674531493622479}
   - component: {fileID: 235618843585568721}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3785,7 +3942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4096850447982215764}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tetrapod Set 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3917,7 +4074,7 @@ GameObject:
   - component: {fileID: 8153101190644567331}
   - component: {fileID: 7056794642292914189}
   - component: {fileID: 5941109186487992096}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4033,7 +4190,7 @@ GameObject:
   - component: {fileID: 2895995538914093679}
   - component: {fileID: 1023210130058142611}
   - component: {fileID: 4408041786381429301}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4098,7 +4255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 7521413809837863201, guid: 9a08ebc315930974c9e72468c0502af4, type: 3}
-  spawnRadius: 2.37
+  spawnRadius: 4.28
   spawnCount: 250
   colour: {r: 0, g: 0, b: 0, a: 1}
   showSpawnRegion: 1
@@ -4121,7 +4278,7 @@ GameObject:
   - component: {fileID: 7442044116841262125}
   - component: {fileID: 8937216595080519453}
   - component: {fileID: 3324126914624960951}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (78)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4244,7 +4401,7 @@ GameObject:
   - component: {fileID: 5292301862894783079}
   - component: {fileID: 7185098789728612841}
   - component: {fileID: 582167792298357913}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4397,7 +4554,7 @@ GameObject:
   - component: {fileID: 6569860375880438680}
   - component: {fileID: 4389462820673018543}
   - component: {fileID: 6188135172681647195}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4423,7 +4580,8 @@ GameObject:
   - component: {fileID: 6641110896078081419}
   - component: {fileID: 6606828077002422519}
   - component: {fileID: 6540465392638568580}
-  m_Layer: 0
+  - component: {fileID: 6641110896078081420}
+  m_Layer: 3
   m_Name: Rock_Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4629,7 +4787,7 @@ GameObject:
   - component: {fileID: 888562384616325024}
   - component: {fileID: 8859702168623537073}
   - component: {fileID: 1603004134435602135}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (125)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4692,7 +4850,7 @@ GameObject:
   - component: {fileID: 4069888750104798611}
   - component: {fileID: 4532965866566900056}
   - component: {fileID: 197922639837743909}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4710,7 +4868,8 @@ GameObject:
   - component: {fileID: 8015802707737015913}
   - component: {fileID: 2106972318936643770}
   - component: {fileID: 462172123722276157}
-  m_Layer: 0
+  - component: {fileID: 8015802707737015914}
+  m_Layer: 3
   m_Name: Rock_Wall 1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9655,7 +9814,7 @@ GameObject:
   - component: {fileID: 1221814727017555564}
   - component: {fileID: 1940394375345343078}
   - component: {fileID: 5788695125460155744}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9681,7 +9840,7 @@ GameObject:
   - component: {fileID: 7200316446483205987}
   - component: {fileID: 5796304374913312484}
   - component: {fileID: 6215248323265443868}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (121)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9714,7 +9873,7 @@ GameObject:
   - component: {fileID: 4013457222430227754}
   - component: {fileID: 7910375006102369708}
   - component: {fileID: 2935017920682414756}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (128)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9739,7 +9898,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 169897053309835803, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2159635773370121191, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9783,55 +9942,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2460106462840585737, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2486508955391965849, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2544892545137152652, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2633446465132478202, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3625696128367838383, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3771024035711767247, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4807409358142790268, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5592966333137522482, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6443854543609942017, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6667537234702955855, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7576552187555200527, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7678460046254603169, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7744616148800164253, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8134409497179489549, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Name
@@ -9839,15 +9998,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8134409497179489549, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8590199238249162035, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8933231014177694246, guid: bb62356302a23494a8b52ef03e7a6454, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9940,7 +10099,7 @@ GameObject:
   - component: {fileID: 4343492059585918598}
   - component: {fileID: 5507783067332187196}
   - component: {fileID: 1558973180543505894}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10011,7 +10170,7 @@ GameObject:
   - component: {fileID: 2122188934310775527}
   - component: {fileID: 3753655862971570038}
   - component: {fileID: 2058830744752061227}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10144,7 +10303,7 @@ GameObject:
   - component: {fileID: 5250269064800384640}
   - component: {fileID: 8651308182075917311}
   - component: {fileID: 7699335350305609811}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10322,7 +10481,7 @@ GameObject:
   - component: {fileID: 7746597291302866579}
   - component: {fileID: 193596009882068503}
   - component: {fileID: 5384996011302819662}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (124)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10355,7 +10514,7 @@ GameObject:
   - component: {fileID: 6029579902482045398}
   - component: {fileID: 769178559521178925}
   - component: {fileID: 2080405979389201688}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (137)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10390,7 +10549,8 @@ GameObject:
   - component: {fileID: 8745903910862592294}
   - component: {fileID: 4327726272654669568}
   - component: {fileID: 7584479886127246698}
-  m_Layer: 0
+  - component: {fileID: 8745903910862592295}
+  m_Layer: 3
   m_Name: Rock_Wall 1_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10408,7 +10568,7 @@ GameObject:
   - component: {fileID: 829965723757838218}
   - component: {fileID: 5766314547398231910}
   - component: {fileID: 490908913154416890}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10426,7 +10586,7 @@ GameObject:
   - component: {fileID: 8289859303384228468}
   - component: {fileID: 6470641883992747759}
   - component: {fileID: 2331176543325901633}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10444,7 +10604,7 @@ GameObject:
   - component: {fileID: 2140606881082805826}
   - component: {fileID: 1589516455048772907}
   - component: {fileID: 6146416803718912250}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10462,7 +10622,7 @@ GameObject:
   - component: {fileID: 4057332649384150244}
   - component: {fileID: 1159541195658795531}
   - component: {fileID: 2152135196354916862}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (127)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10525,7 +10685,7 @@ GameObject:
   - component: {fileID: 49491482819107249}
   - component: {fileID: 5881803324617677985}
   - component: {fileID: 2908181486562379911}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10634,7 +10794,7 @@ GameObject:
   - component: {fileID: 8807774368053175809}
   - component: {fileID: 3559051803827081755}
   - component: {fileID: 5938352491762950345}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10727,7 +10887,7 @@ GameObject:
   - component: {fileID: 4110748761663224581}
   - component: {fileID: 6636268073852141698}
   - component: {fileID: 9171724107292405647}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10885,7 +11045,7 @@ GameObject:
   - component: {fileID: 3295992418628439919}
   - component: {fileID: 1524649337963813848}
   - component: {fileID: 5204197675259150498}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (87)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11224,7 +11384,7 @@ GameObject:
   - component: {fileID: 7838611423007437927}
   - component: {fileID: 1538486545998183951}
   - component: {fileID: 5984626186306619535}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (77)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11242,7 +11402,7 @@ GameObject:
   - component: {fileID: 172987797781346423}
   - component: {fileID: 6224743107280841477}
   - component: {fileID: 3883579166885542189}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (120)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11258,7 +11418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3057588300798487393}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: Tetrapod Dummy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11276,7 +11436,7 @@ GameObject:
   - component: {fileID: 1460275407005256563}
   - component: {fileID: 587913225342715755}
   - component: {fileID: 2027966641732068101}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (130)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11542,7 +11702,7 @@ GameObject:
   - component: {fileID: 4576455931994764742}
   - component: {fileID: 3407311155239241813}
   - component: {fileID: 8286024294017795430}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (122)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11812,7 +11972,7 @@ GameObject:
   - component: {fileID: 1526613739194916713}
   - component: {fileID: 4041369538615899477}
   - component: {fileID: 4526650023463110489}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (86)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11875,12 +12035,34 @@ Transform:
   m_GameObject: {fileID: 2117083811369172351}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0000017490987, y: -0.70710486, z: 0.7071088, w: -0.0000017490889}
-  m_LocalPosition: {x: -6.7845287, y: 6.662036, z: 16.164345}
-  m_LocalScale: {x: 113.660034, y: 113.660034, z: 113.660034}
+  m_LocalPosition: {x: -0.19589424, y: -6.292865, z: 25.628298}
+  m_LocalScale: {x: 113.66005, y: 113.660034, z: 113.660034}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1291393647}
   m_LocalEulerAnglesHint: {x: -270, y: 0, z: 0}
+--- !u!64 &6641110896078081420
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117083811369172351}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2239659842870032056, guid: c4436e5fe0292534da655f46d74f708b, type: 3}
 --- !u!1 &6760131095097438533
 GameObject:
   m_ObjectHideFlags: 0
@@ -11892,7 +12074,7 @@ GameObject:
   - component: {fileID: 3914281886188693689}
   - component: {fileID: 7409054957028322423}
   - component: {fileID: 1999929911412864834}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11979,7 +12161,8 @@ GameObject:
   - component: {fileID: 7187824396766939857}
   - component: {fileID: 2432942243723292655}
   - component: {fileID: 4956467906183231840}
-  m_Layer: 0
+  - component: {fileID: 7187824396766939858}
+  m_Layer: 3
   m_Name: Rock_Wall 1_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12095,12 +12278,34 @@ Transform:
   m_GameObject: {fileID: 7141134105294235283}
   serializedVersion: 2
   m_LocalRotation: {x: -3.8333763e-12, y: 1, z: 0.0000015497205, w: 0.000002473592}
-  m_LocalPosition: {x: -7.009197, y: 21.392036, z: 3.3093448}
+  m_LocalPosition: {x: -0.42056274, y: 8.437136, z: 12.773298}
   m_LocalScale: {x: 1.1366, y: 1.1366, z: 1.1366}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1291393647}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7187824396766939858
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7141134105294235283}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6066244242447980545, guid: c4436e5fe0292534da655f46d74f708b, type: 3}
 --- !u!4 &7200316446483205987
 Transform:
   m_ObjectHideFlags: 0
@@ -12255,7 +12460,7 @@ GameObject:
   - component: {fileID: 3672946992145859219}
   - component: {fileID: 5817939810916024169}
   - component: {fileID: 2559423300132022044}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12387,12 +12592,34 @@ Transform:
   m_GameObject: {fileID: 2872622995798433674}
   serializedVersion: 2
   m_LocalRotation: {x: -3.8333763e-12, y: 1, z: 0.0000015497205, w: 0.000002473592}
-  m_LocalPosition: {x: -6.5886345, y: 12.954901, z: -9.463953}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.1366, y: 1.1366, z: 1.1366}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1291393647}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8015802707737015914
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2872622995798433674}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6066244242447980545, guid: c4436e5fe0292534da655f46d74f708b, type: 3}
 --- !u!1 &8044526644943975062
 GameObject:
   m_ObjectHideFlags: 0
@@ -12404,7 +12631,7 @@ GameObject:
   - component: {fileID: 158516486347128569}
   - component: {fileID: 5153635908536688546}
   - component: {fileID: 1821206605597557166}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (134)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12454,7 +12681,7 @@ GameObject:
   - component: {fileID: 6185560946369080463}
   - component: {fileID: 1083830455921017966}
   - component: {fileID: 8989936007860102883}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (140)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12510,7 +12737,7 @@ GameObject:
   - component: {fileID: 1513032826703900620}
   - component: {fileID: 829042627907443603}
   - component: {fileID: 9140118108061998957}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12528,7 +12755,7 @@ GameObject:
   - component: {fileID: 5213794203176669676}
   - component: {fileID: 4208120737081398052}
   - component: {fileID: 7326374518810693613}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12638,7 +12865,7 @@ GameObject:
   - component: {fileID: 8326361720383420041}
   - component: {fileID: 1454743827390122588}
   - component: {fileID: 583635967548658222}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (131)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12701,7 +12928,7 @@ GameObject:
   - component: {fileID: 7160772707739286151}
   - component: {fileID: 6990133954365762405}
   - component: {fileID: 908943389027997103}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12764,7 +12991,7 @@ GameObject:
   - component: {fileID: 2037961078244169559}
   - component: {fileID: 4120009539225382321}
   - component: {fileID: 168974180400512359}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12788,12 +13015,34 @@ Transform:
   m_GameObject: {fileID: 4704083308014605395}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000002473592, y: 0.0000013411044, z: 1, w: 3.317345e-12}
-  m_LocalPosition: {x: -6.8, y: 28.462036, z: 18.053646}
+  m_LocalPosition: {x: -0.2113657, y: 15.507135, z: 27.5176}
   m_LocalScale: {x: 1.1366, y: 1.1366, z: 1.1366}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1291393647}
   m_LocalEulerAnglesHint: {x: -180, y: 0, z: 0}
+--- !u!64 &8745903910862592295
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4704083308014605395}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6066244242447980545, guid: c4436e5fe0292534da655f46d74f708b, type: 3}
 --- !u!4 &8775741802967149572
 Transform:
   m_ObjectHideFlags: 0
@@ -12835,7 +13084,7 @@ GameObject:
   - component: {fileID: 6509286796502414534}
   - component: {fileID: 875043935558495885}
   - component: {fileID: 8527935100842713160}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BP_Tetrapod_L (129)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12930,12 +13179,34 @@ Transform:
   m_GameObject: {fileID: 234625127897734503}
   serializedVersion: 2
   m_LocalRotation: {x: -3.637979e-12, y: 0.0000013411044, z: 1, w: 0.000002473592}
-  m_LocalPosition: {x: -6.58465, y: 12.011302, z: 40.624344}
+  m_LocalPosition: {x: 0.0039844513, y: -0.94359875, z: 50.088295}
   m_LocalScale: {x: 1.1366, y: 1.1365999, z: 1.1365999}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1291393647}
   m_LocalEulerAnglesHint: {x: -180, y: 0, z: 0}
+--- !u!64 &9069042647419585124
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234625127897734503}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6066244242447980545, guid: c4436e5fe0292534da655f46d74f708b, type: 3}
 --- !u!23 &9120571390935077938
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13086,6 +13357,7 @@ SceneRoots:
   - {fileID: 323116678}
   - {fileID: 237721569}
   - {fileID: 1615889517}
+  - {fileID: 1291393647}
   - {fileID: 8405145635061173595}
   - {fileID: 733337681}
   - {fileID: 3057588300798487393}
@@ -13093,17 +13365,10 @@ SceneRoots:
   - {fileID: 3419145811310612218}
   - {fileID: 1183215722}
   - {fileID: 5143545497338468873}
-  - {fileID: 1752006625}
-  - {fileID: 7187824396766939857}
   - {fileID: 7521463231695839857}
-  - {fileID: 9069042647419585123}
-  - {fileID: 1091449730}
-  - {fileID: 6641110896078081419}
   - {fileID: 1898074287}
   - {fileID: 1969457173}
   - {fileID: 4391450905317902251}
-  - {fileID: 8745903910862592294}
-  - {fileID: 8015802707737015913}
   - {fileID: 3875915638553521159}
   - {fileID: 1637545274}
   - {fileID: 496139979}
